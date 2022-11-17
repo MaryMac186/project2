@@ -1,0 +1,467 @@
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    line-height: 1.5;
+    color:#868e96;
+}
+/* Banner holding the image and the text */
+#banner {
+    height: 60vh;
+    position: relative;
+    background-image: linear-gradient(
+    rgba(34, 34, 34, 0.5),
+    rgba(34, 34, 34, 0.5)),
+   url(../images/banner.jpg); 
+   background-size: cover; 
+}
+
+/* style vi tri cho header o banner */
+#banner h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#f7f7f7; 
+}
+
+#banner span {  
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #adb5bd;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section .container {
+    width: 1170px;
+    display: block;
+    margin: 0px 150px;
+}
+
+/* Style cho phan Nav */
+
+nav .container {
+   padding-top: 40px;
+   height: 60px;
+}
+/* Navigation list */
+
+#nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+   
+}
+
+#nav-bar ul li{
+    padding: 20px;
+    text-align: center;
+    border-left: 1px solid #d0d0d0;
+}
+#nav-bar ul li:nth-child(2){
+    border-right: 1px solid #d0d0d0;
+}
+#nav-bar ul li:nth-child(5){
+    border-right: 1px solid #d0d0d0;
+}
+
+#nav-bar ul li:nth-child(3){
+    width: 240px;
+    position: relative;
+}
+
+#nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* icon cua phan Nav */
+#nav-bar i {
+    color:dodgerblue;
+}
+/* image cua nav */ 
+nav img {
+    position: absolute;
+    border: 10px solid #f7f7f7;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px; 
+    left: 45px;
+    top: -70px;
+}
+
+/* Style phan thong tin ca nhan, muc tieu nghe nghiep */
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    height: 360px;
+    justify-content: center;   
+    margin-bottom: 30px;
+}
+
+#target {
+    background-color: #f1f3f5;   
+    padding-top: 50px;
+    padding-left: 40%;
+    padding-right: 30px;
+    font-size: 13px;
+}
+
+#personal-info {
+    background-color: #e9ecef;
+    padding-top: 50px;
+    font-size: 13px;  
+}
+    
+/* style icon phan thong tin ca nhan */
+#personal-info i {
+    color:dodgerblue;      
+}
+
+#about p {
+    padding-top: 25px;
+}
+#personal-info h1 {
+    padding-left: 40px;
+}
+
+#personal-info ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+/* GRID LAYOUT  Job-info */
+
+#job-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0px 150px;
+    gap: 20px;
+    margin-bottom: 20px; 
+    font-size: 13px; 
+}
+
+#job-info h1{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+#experience {
+    border: solid #e9ecef;    
+    padding: 20px 15px 0px 15px; 
+}
+#experience li{
+    color:#199cdb;
+}
+
+#job-info .time {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#job-info .current {
+    background-color: #199cdb;
+    border-radius: 20%;
+    color:#f1f3f5;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+#job-info .job2 {
+    padding-top: 20px;
+}
+
+/* Phan Hoc van */
+
+#education { 
+    border:solid #e9ecef; 
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+#education .edu2 {
+    padding-top: 30px;
+}
+#education li{
+    color:#199cdb;
+}
+
+/* Hoat dong */
+#Activities {
+    border:solid #e9ecef;    
+    padding-top: 25px;  
+    padding-left: 15px;
+}
+#Activities li {
+    color:#199cdb;
+}
+#Activities .act1 {
+    padding-top: 30px;
+}
+
+/* So thich */
+#Hobbies {  
+    border:solid #e9ecef;    
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+#Hobbies .h-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    
+}
+
+#Hobbies .hobbies-icons {
+    font-size: 30px;
+   /* padding-top: 30px; */
+    color:dodgerblue;  
+    padding: 12px;
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+}
+
+.hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 40px 0px 10px;
+}
+
+.hobbies-item {
+    width: 25%;
+    text-align: center;
+}
+.hobbies-item i{
+    width: 50px;
+    color: #199cdb;
+    font-size: 24px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    line-height: 50px;
+}
+.hobbies-item h5{
+    padding-top: 15px;
+}
+
+/* Ngon ngu */
+#Language {
+    border:solid #e9ecef;  
+    padding-top: 25px;   
+    padding-left: 15px; 
+}
+
+#Language .score {
+    background: #199cdb;
+    display:inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+#Language .score-1 {    
+    background: #e9ecef;
+    display:inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+#Language p{
+    font-size: 12px;
+}
+
+/* Ky nang */
+#Skills {
+    width: 100%;
+    border:solid #e9ecef;  
+    padding-top: 25px;
+    padding-left: 15px;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+#Skills h1 {
+    padding-bottom: 20px;
+   
+}
+
+#Skills .score {
+    background: #199cdb;
+    display:inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+#Skills .score-1 {    
+    background: #e9ecef;
+    display:inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+.h-icon {
+    display:flex;   
+}
+.h-icon h1 {
+    width: 75%;
+}
+.h-icon i {
+    color: dodgerblue;
+    font-size: 30px;
+}
+
+/* CERTIFICATE  */
+
+#certificate .section-title {
+    padding: 20px 0;
+    font-size: 17px;
+} 
+
+.row-certificate {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;    
+
+}
+
+.certificate-item {
+    width: 50%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6c08d;
+}
+
+.certificate-image {
+    width: 40%;
+}
+.certificate-content {
+    width: 60%;
+}
+.certificate-item:nth-child(odd) .certificate-content {
+    border-right: 1px solid #d6c08d;
+}
+
+#certificate img {
+    width: 100%;
+    display:block;
+}
+
+/* PROJECT GRID LAYOUT*/
+
+#project .section-title {
+    padding: 20px 0;
+}
+
+.project-content {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px; 
+    margin-right: 150px;
+    font-size: 13px;
+}
+
+#project img {
+    width : 100%;  
+    display:block;
+}
+
+#project i {
+    font-size: 14px;
+}
+.project-time {
+    display:flex;
+    border: 1px #e9ecef solid;
+   
+    padding: 10px 15px;
+    gap: 10px;
+}
+.year {
+    background-color:dodgerblue;
+    border-radius: 40%;
+    color:#f1f3f5;
+    padding: 2px 12px;
+    font-size: 10px;
+}
+
+#project table {
+    border: 1px solid  #e9ecef;
+    
+    border-collapse: collapse;  
+}
+
+.project-name {
+    border: 1px #e9ecef solid;
+  
+    padding: 12px 15px;
+    gap: 10px;
+}
+
+#project tr {
+    border: 1px solid  #e9ecef;          
+}
+
+td {
+    display:flex;
+    gap: 20px;
+}
+
+.tb1 {
+    width: 80px;
+    padding-left: 5px;
+}
+.tb2 {
+    width: 220px;
+}
+
+/* FOOTER */
+
+#footer {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    font-size: 15px;
+    color:#d0d0d0;
+}
+
+#footer .footer-i {
+    display:flex;
+    list-style: none;
+    text-align:center;
+    gap : 10px; 
+    justify-content: center;
+    align-items: center;
+}  
+
+#footer i {
+    color:#199cdb;
+    font-size: 25px;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+}
+a:hover, a:action {
+    font-size: 28px;
+    cursor:pointer;
+}
